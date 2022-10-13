@@ -13,7 +13,7 @@
     
     
       
-        <title>Resource Access - MAIA</title>
+        <title>Cluster Access - MAIA</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#access-maia-resources" class="md-skip">
+        <a href="#cluster-access" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Resource Access
+              Cluster Access
             
           </span>
         </div>
@@ -171,15 +171,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../docs_home/" class="md-tabs__link md-tabs__link--active">
+      <a href="../docs_home.md" class="md-tabs__link">
         Docs
       </a>
     </li>
@@ -252,14 +250,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -282,7 +278,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../docs_home/" class="md-nav__link">
+      <a href="../docs_home.md" class="md-nav__link">
         MAIA Docs
       </a>
     </li>
@@ -296,7 +292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../registration/" class="md-nav__link">
+      <a href="../registration.md" class="md-nav__link">
         User Registration
       </a>
     </li>
@@ -310,7 +306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup/" class="md-nav__link">
+      <a href="../setup.md" class="md-nav__link">
         Getting Started
       </a>
     </li>
@@ -324,7 +320,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authentication/" class="md-nav__link">
+      <a href="../authentication.md" class="md-nav__link">
         User Authentication
       </a>
     </li>
@@ -338,7 +334,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../access/" class="md-nav__link">
+      <a href="../access.md" class="md-nav__link">
         Cluster Access
       </a>
     </li>
@@ -350,112 +346,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Resource Access
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../pod_access.md" class="md-nav__link">
         Resource Access
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#direct-pod-access" class="md-nav__link">
-    Direct Pod Access
-  </a>
-  
-    <nav class="md-nav" aria-label="Direct Pod Access">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#kubectl-access" class="md-nav__link">
-    Kubectl Access
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#kubenav-access" class="md-nav__link">
-    KubeNav access
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#port-forwarding-and-service-access" class="md-nav__link">
-    Port forwarding and service access
-  </a>
-  
-    <nav class="md-nav" aria-label="Port forwarding and service access">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#kubectl-port-forwarding" class="md-nav__link">
-    Kubectl port-forwarding
-  </a>
-  
-    <nav class="md-nav" aria-label="Kubectl port-forwarding">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#ssh-access" class="md-nav__link">
-    SSH Access
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#kubenav-port-forwarding" class="md-nav__link">
-    KubeNav port-forwarding
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -495,44 +390,29 @@
                 
                   
 
-  <a href="https://github.com/MAIA-KTH/Hive_Gate/edit/main/docs/pod_access.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/MAIA-KTH/Hive_Gate/edit/main/docs/cluster_access.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="access-maia-resources">Access MAIA Resources</h1>
-<p>To access the resources (pods) on the cluster, two different options are available: a direct pod access (either with *
-kubectl<em> or </em>KubeNav<em>),
-and a port-forwarding to access the services on the </em>localhost* address.</p>
-<h2 id="direct-pod-access">Direct Pod Access</h2>
-<h3 id="kubectl-access">Kubectl Access</h3>
-<p>To access a pod as root with <em>kubectl</em>, run:</p>
-<pre><code>kubectl exec -it POD_NAME bash
+<h1 id="cluster-access">Cluster Access</h1>
+<h2 id="cluster-access-on-cli">Cluster Access on CLI</h2>
+<p>To verify the correct cluster access, run:</p>
+<pre><code>kubectl get pods
 </code></pre>
-<h3 id="kubenav-access">KubeNav access</h3>
-<p>To access a pod as root with <em>KubeNav</em>, navigate on the interface to find the pod, then, inside the <strong>Container</strong> space,
-click on the <code>TERM</code> icon:
-<img alt="img.png" src="../images/KubeNav_term.png" /></p>
-<h2 id="port-forwarding-and-service-access">Port forwarding and service access</h2>
-<h3 id="kubectl-port-forwarding">Kubectl port-forwarding</h3>
-<p>In order to access the available services (<code>kubectl get svc</code>), you can forward the remote cluster port to a local port:</p>
-<pre><code>kubectl port-forward svc/SERVICE_NAME LOCAL_PORT_1:REMOTE_SERVER_PORT_1 LOCAL_PORT_2:REMOTE_SERVER_PORT_2 
+<p>or:</p>
+<pre><code>kubectl get svc
 </code></pre>
-<p>After port-forwarding, the corresponding services are available at <code>localhost:PORT_1</code>, <code>localhost:PORT_2</code>, ...</p>
-<h4 id="ssh-access">SSH Access</h4>
-<p>As an example, to access a resource via SSH:</p>
-<pre><code>kubectl port-forward svc/SERVICE_NAME LOCAL_PORT:22
-
-ssh USERNAME@localhost -p LOCAL_PORT
+<p>You should see an output similar to:</p>
+<pre><code>NAME                      TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)                  AGE
+user01-v1-example-hive    ClusterIP   10.99.56.221   &lt;none&gt;        22/TCP,80/TCP,5000/TCP   24d
 </code></pre>
-<h3 id="kubenav-port-forwarding">KubeNav port-forwarding</h3>
-<p>To access the available cluster services, you can forward the remote cluster port to a local port using the <em>KubeNav</em>
-interface.</p>
-<p>To do so, navigate to the desired service, and click the ports to forward under <strong>Configuration</strong> &rarr; <strong>Ports</strong>.
-Then, insert the <em>LOCAL_PORT</em> number and click <code>START</code>.</p>
-<p><img alt="img.png" src="../images/KubeNav_svc.png" /></p>
-<p><img alt="img_1.png" src="../images/KubeNav_start.png" /></p>
+<p>To inspect resources in other namespaces, run:</p>
+<pre><code>kubectl get pods -n NAMESPACE
+</code></pre>
+<h2 id="cluster-access-on-kubenav">Cluster Access on KubeNav</h2>
+<p>Launch KubeNav and verify the access by checking if some <em>pods</em> or <em>services</em> can be detected by selecting the corresponding resources on the sidebar.</p>
 
   <hr>
 <div class="md-source-file">
@@ -568,42 +448,6 @@ Then, insert the <em>LOCAL_PORT</em> number and click <code>START</code>.</p>
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../access/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Cluster Access" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Cluster Access
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../file_transfer/" class="md-footer__link md-footer__link--next" aria-label="Next: File Transfer" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              File Transfer
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
