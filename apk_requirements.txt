@@ -1,1 +1,3 @@
 build-base
+libxml2
+libxslt-dev
