@@ -1,3 +1,6 @@
 build-base
 libxml2
 libxslt-dev
+gcc
+g++
+gcc
