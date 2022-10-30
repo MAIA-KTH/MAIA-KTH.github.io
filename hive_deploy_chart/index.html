@@ -13,7 +13,7 @@
     
     
       
-        <title>User Authentication - MAIA</title>
+        <title>Deploy Resources - MAIA</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#maia-user-authentication" class="md-skip">
+        <a href="#deploy-custom-environments-in-maia" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              User Authentication
+              Deploy Resources
             
           </span>
         </div>
@@ -322,79 +322,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          User Authentication
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../user_authentication/" class="md-nav__link">
         User Authentication
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#user-login" class="md-nav__link">
-    User Login
-  </a>
-  
-    <nav class="md-nav" aria-label="User Login">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#authentication-via-web-browser-app" class="md-nav__link">
-    Authentication via web browser app
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#authentication-with-command-line" class="md-nav__link">
-    Authentication with command line
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#first-time-authentication" class="md-nav__link">
-    First time Authentication
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -446,14 +378,16 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" checked>
       
       
       
@@ -474,11 +408,175 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../hive_deploy_chart/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Deploy Resources
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Deploy Resources
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#custom-helm-values" class="md-nav__link">
+    Custom Helm values
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Helm values">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#general-configuration" class="md-nav__link">
+    General Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="General Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#namespace-required" class="md-nav__link">
+    Namespace [Required]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#chart-name-required" class="md-nav__link">
+    Chart Name [Required]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-image-required" class="md-nav__link">
+    Docker image [Required]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requested-resources-required" class="md-nav__link">
+    Requested Resources [Required]
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#services" class="md-nav__link">
+    Services
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#persistent-volumes" class="md-nav__link">
+    Persistent Volumes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mounted-files" class="md-nav__link">
+    Mounted files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#node-selection" class="md-nav__link">
+    Node Selection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ingress" class="md-nav__link">
+    Ingress
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-variables" class="md-nav__link">
+    Environment variables
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hive-docker-configuration" class="md-nav__link">
+    Hive Docker Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Hive Docker Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-info" class="md-nav__link">
+    User info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-file-example" class="md-nav__link">
+    Configuration File Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-charts" class="md-nav__link">
+    Deploy Charts
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -511,33 +609,198 @@
                 
                   
 
-  <a href="https://github.com/MAIA-KTH/Hive_Gate/edit/main/docs/user_authentication.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/MAIA-KTH/Hive_Gate/edit/main/docs/hive_deploy_chart.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="maia-user-authentication">MAIA User Authentication</h1>
-<p>After <a href="../user_registration/">registering a MAIA account</a>, follow the instructions provided to <a href="../getting_started/">get started</a> and correctly authenticate to the MAIA cluster.</p>
-<h2 id="user-login">User Login</h2>
-<p>In order to properly authenticate to the cluster, you need to have a proper configuration YAML file saved in <code>~/.kube/config</code>.
-This configuration file can be obtained by authentication via the <a href="https://loginapp.k8s-maia.com">MAIA login web app</a>.
-A personal ID token is required to authenticate to the cluster. This token is uniquely assigned to each user and stored in the <code>config</code> file.</p>
-<p>IMPORTANT: Each ID token is valid for only 48 hours, so you will need to re-authenticate every 2 days, either through the <a href="#Authentication via web browser app">web app</a> or with the <a href="#Authentication with command line">command line</a></p>
-<h3 id="authentication-via-web-browser-app">Authentication via web browser app</h3>
-<p>After installing <strong>kubectl</strong>, authenticate through the <a href="https://loginapp.k8s-maia.com">MAIA Login</a> webpage.
-Copy/paste and execute the displayed commands on your shell or either download the full config file and save it as <code>~/.kube/config</code>.</p>
-<p>NOTE: In Windows systems, <code>Git Bash</code> is the recommended shell to execute <em>Kube</em> commands.</p>
-<h3 id="authentication-with-command-line">Authentication with command line</h3>
-<p>In order to properly authenticate using the command line, <a href="https://github.com/int128/kubelogin">KubeLogin</a> needs to be installed first.</p>
-<p>You can get the latest binary release for your OS on the GitHub page, and save it as <code>~/.kube/kubectl-oidc_login</code>.
-After saving it, run <code>kubectl oidc-login</code>. You will be prompted to a webpage where to login with your credentials.
-After a successful login, the new ID token will be automatically saved in the <em>config</em> file.</p>
-<h2 id="first-time-authentication">First time Authentication</h2>
-<p>When you authenticate to the cluster for the first time after the registration, you will need to set your personal namespace as the default.
-This is because, by default, Kubernetes assignes the namespace <code>default</code> as the current one.
-To set your personal namespace as the current one:</p>
-<pre><code>kubectl config set-context --current --namespace=YOUR_NAMESPACE
+<h1 id="deploy-custom-environments-in-maia">Deploy Custom Environments in MAIA</h1>
+<p>To create custom environments and deploy applications in MAIA (including pods, services and ingresses) 
+a Helm chart is available: <a href="https://maia-kth.github.io/Hive_Gate/">Hive_Gate</a>.</p>
+<p>With the <strong>Hive_Gate</strong> chart it is possible to deploy any <em>Docker Image</em> as a Pod, expose the required ports as services, mount persistent volumes on the specified locations and optionally create Ingress resources to expose the application to the external traffic using the HTTPS protocol.</p>
+<p>To add the chart to Helm, run:</p>
+<pre><code>helm repo add hive-gate https://maia-kth.github.io/Hive_Gate/
+helm repo update
+</code></pre>
+<h2 id="custom-helm-values">Custom Helm values</h2>
+<p>A number of custom parameters can be specified for the Helm chart, including the Docker image to deploy, the port to expose, etc.</p>
+<p>The custom configuration is set in a JSON configuration file, following the conventions described below.</p>
+<h3 id="general-configuration">General Configuration</h3>
+<h4 id="namespace-required">Namespace [Required]</h4>
+<p>Specify the Cluster Namespace where to deploy the resources</p>
+<pre><code class="language-json">{
+  &quot;namespace&quot;: &quot;NAMESPACE_NAME&quot;
+}
+</code></pre>
+<h4 id="chart-name-required">Chart Name [Required]</h4>
+<p>Specify the Helm Chart Release name</p>
+<pre><code class="language-json">{
+  &quot;chart_name&quot;: &quot;Helm_Chart_name&quot;
+}
+</code></pre>
+<h4 id="docker-image-required">Docker image [Required]</h4>
+<p>To specify the Docker image to deploy</p>
+<pre><code class="language-json">{
+  &quot;docker_image&quot;: &quot;DOCKER_IMAGE&quot;
+}
+</code></pre>
+<h4 id="requested-resources-required">Requested Resources [Required]</h4>
+<p>To request resources (RAM,CPU and optionally GPU).</p>
+<pre><code class="language-json">{
+  &quot;memory_size&quot; : &quot;REQUESTED_RAM_SIZE&quot;,
+  &quot;cpu&quot; : &quot;REQUESTED_CPUs&quot;
+}
+</code></pre>
+<p>Optionally, to request GPU usage:</p>
+<pre><code class="language-json">{
+  &quot;gpu_request&quot; : &quot;NUMBER_OF_GPUs&quot;
+}
+</code></pre>
+<h4 id="services">Services</h4>
+<p>To specify which ports (and corresponding services) can be reached from outside the pod.</p>
+<pre><code class="language-json">{
+  &quot;ports&quot; : {
+    &quot;SERVICE_NAME_1&quot;: [&quot;PORT_NUMBER&quot;],
+    &quot;SERVICE_NAME_2&quot;: [&quot;PORT_NUMBER&quot;]
+  }
+}
+
+</code></pre>
+<p>The default <em>Service Type</em> is <strong>ClusterIP</strong>. To expose a service as a type <strong>NodePort</strong>:</p>
+<pre><code class="language-json">{
+  &quot;service_type&quot;: &quot;NodePort&quot;,
+  &quot;ports&quot; : {
+    &quot;SERVICE_NAME_1&quot;: [&quot;PORT_NUMBER&quot;, &quot;NODE_PORT_NUMBER&quot;],
+    &quot;SERVICE_NAME_2&quot;: [&quot;PORT_NUMBER&quot;, &quot;NODE_PORT_NUMBER&quot;]
+  }
+}
+
+</code></pre>
+<h4 id="persistent-volumes">Persistent Volumes</h4>
+<p>2 different types of persistent volumes are available: <strong>hostPath</strong> (local folder) and <strong>nfs</strong> (shared nfs folder).
+For each of these types, it is possible to request a Persistent Volume via a Persistent Volume Claim, or to directly reference the folder in the host/nfs server to mount.</p>
+<p>Direct access:</p>
+<pre><code class="language-json">{
+  &quot;host_volume_mounts&quot;: 
+  {
+    &quot;host-folder_1&quot;: [&quot;/host/folder/path_1&quot;, &quot;/mount/path_1&quot;,&quot;readOnly&quot;],
+    &quot;host-folder_2&quot;: [&quot;/host/folder/path_2&quot;, &quot;/mount/path_2&quot;]
+  },
+  &quot;nfs_server&quot;: &quot;NFS_SERVER_IP&quot;,
+  &quot;nfs_volume_mounts&quot;: 
+  {
+    &quot;nfs-folder_1&quot;: [&quot;/nfs/folder/path_1&quot;, &quot;/mount/path_1&quot;,&quot;readOnly&quot;],
+    &quot;nfs-folder_2&quot;: [&quot;/nfs/folder/path_2&quot;, &quot;/mount/path_2&quot;]
+  }
+}
+</code></pre>
+<p>The <em>"readOnly"</em> options can be added to specify the mounted folder as read-only.</p>
+<p>Request PVC:</p>
+<pre><code class="language-json">{
+  &quot;persistent_volume&quot; : 
+  [
+    {
+      &quot;mountPath&quot;: &quot;/mount/path_1&quot;,
+      &quot;size&quot;: &quot;VOLUME_SIZE&quot;,
+      &quot;access_mode&quot;: &quot;ACCESS_TYPE&quot;,
+      &quot;pvc_type&quot;: &quot;STORAGE_CLASS&quot;
+    },
+    {
+      &quot;mountPath&quot;: &quot;/mount/path_2&quot;,
+      &quot;size&quot;: &quot;VOLUME_SIZE&quot;,
+      &quot;access_mode&quot;: &quot;ACCESS_TYPE&quot;,
+      &quot;pvc_type&quot;: &quot;STORAGE_CLASS&quot;
+    }
+  ]
+}
+</code></pre>
+<p><strong>"STORAGE_CLASS"</strong> can be any of the storage classes available on the cluster: </p>
+<pre><code>kubectl get sc
+</code></pre>
+<h4 id="mounted-files">Mounted files</h4>
+<p>Single files can be mounted inside the Pod. First, a ConfigMap including the file is created, and then it is mounted into the Pod.</p>
+<pre><code class="language-json">{
+  &quot;mount_files&quot;:
+  {
+    &quot;file_name&quot;: [&quot;/local/file/path&quot;,&quot;/file/mount/path&quot;]
+  }
+}
+</code></pre>
+<h4 id="node-selection">Node Selection</h4>
+<p>To optionally select which node in the cluster to use for deploying the application.</p>
+<pre><code class="language-json">{
+  &quot;node_selector&quot;: &quot;NODE_NAME&quot;
+}
+</code></pre>
+<h4 id="ingress">Ingress</h4>
+<p>Used to create an Ingress resources to access the application at the specified port by using an HTTPS address.
+IMPORTANT! The specified DNS needs to be active and connected to the cluster DNS (<strong>".k8s-maia.com"</strong>)</p>
+<pre><code class="language-json">{
+  &quot;ingress&quot;: 
+  {
+    &quot;host&quot;: &quot;SUBDOMAIN.k8s-maia.com&quot;,
+    &quot;port&quot;: &quot;SERVICE_PORT&quot;
+  }
+}
+</code></pre>
+<h4 id="environment-variables">Environment variables</h4>
+<p>To add environment variables, used during the creation and deployment of the pod (i.e., environment variables to specify for the Docker Image).</p>
+<pre><code class="language-json">{
+  &quot;env_variables&quot;: 
+  {
+    &quot;KEY_1&quot;: &quot;VAL_1&quot;,
+    &quot;KEY_2&quot;: &quot;VAL_2&quot;
+  }
+}
+</code></pre>
+<h3 id="hive-docker-configuration">Hive Docker Configuration</h3>
+<h4 id="user-info">User info</h4>
+<p>When deploying Hive-based applications, it is possible to create single-multiple user account in the environment.
+For each of the users, <em>username</em>, <em>password</em> <em>email</em>, and, optionally, an <em>ssh public key</em> are required.
+This information is stored inside Secrets:</p>
+<pre><code>USER_1_SECRET:
+    user: USER_1
+    password: pw
+    email: user@email.com
+    ssh_publickey [Optional]: &quot;ssh-rsa ...&quot; 
+</code></pre>
+<p>To provide the user information to the Pod:</p>
+<pre><code class="language-json">{
+  &quot;user_secret&quot; : 
+  [ 
+    &quot;user-1-secret&quot;,
+    &quot;user-2-secret&quot;
+  ],
+  &quot;user_secret_params&quot; : [&quot;user&quot;,&quot;password&quot;,&quot;email&quot;, &quot;ssh_publickey&quot;]
+}
+</code></pre>
+<h2 id="configuration-file-example">Configuration File Example</h2>
+<pre><code class="language-json">{
+  &quot;namespace&quot;: &quot;machine-learning&quot;,
+  &quot;chart_name&quot;: &quot;jupyterlab-1-v1&quot;,
+  &quot;docker_image&quot;: &quot;jupyter/scipy-notebook&quot;,
+  &quot;tag&quot; : &quot;latest&quot;,
+  &quot;memory_size&quot; : &quot;4Gi&quot;,
+  &quot;cpu&quot; : &quot;5000m&quot;,
+  &quot;ports&quot; : {
+    &quot;jupyter&quot;: [8888]
+  },
+  &quot;persistent_volume&quot; :
+  [
+    {
+      &quot;mountPath&quot;: &quot;/home/jovyan&quot;,
+      &quot;size&quot;: &quot;100Gi&quot;,
+      &quot;access_mode&quot;: &quot;ReadWriteOnce&quot;,
+      &quot;pvc_type&quot;: &quot;local-hostpath&quot;
+    }
+  ]
+}
+</code></pre>
+<h2 id="deploy-charts">Deploy Charts</h2>
+<p>To deploy an Helm Hive Chart, first create a config file according to the specific requirements (as described <a href="#Custom Helm values">above</a>).
+Then run:</p>
+<pre><code>Hive_Gate_deploy_helm_chart --config-file /PATH/TO/CONFIG/FILE
 </code></pre>
 
   <hr>
@@ -545,11 +808,11 @@ To set your personal namespace as the current one:</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 18, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 30, 2022</span>
       
         <br>
         Created:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 8, 2022</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 30, 2022</span>
       
     
   </small>
@@ -579,7 +842,7 @@ To set your personal namespace as the current one:</p>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../getting_started/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting Started" rel="prev">
+        <a href="../file_transfer/" class="md-footer__link md-footer__link--prev" aria-label="Previous: File Transfer" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -588,26 +851,11 @@ To set your personal namespace as the current one:</p>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Getting Started
+              File Transfer
             </div>
           </div>
         </a>
       
-      
-        
-        <a href="../cluster_access/" class="md-footer__link md-footer__link--next" aria-label="Next: Cluster Access" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              Cluster Access
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
       
     </nav>
   
