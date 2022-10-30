@@ -15,5 +15,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CONFIG_FILE: mkdocs.yml
-          EXTRA-PACKAGES: build-base, libxml2-dev, libxslt-dev, python-dev
+          EXTRA-PACKAGES: build-base
           REQUIREMENTS: requirements.txt
