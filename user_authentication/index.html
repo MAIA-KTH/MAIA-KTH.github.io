@@ -9,7 +9,7 @@
       
       
       <link rel="icon" href="../images/MAI_A_logo.png">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
+      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
     
     
       
@@ -162,7 +162,7 @@
 
 
   <li class="md-tabs__item">
-    <a href=".." class="md-tabs__link">
+    <a href="../main/" class="md-tabs__link">
       Home
     </a>
   </li>
@@ -239,7 +239,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../main/" class="md-nav__link">
         Home
       </a>
     </li>
@@ -523,7 +523,7 @@
 <p>In order to properly authenticate to the cluster, you need to have a proper configuration YAML file saved in <code>~/.kube/config</code>.
 This configuration file can be obtained by authentication via the <a href="https://loginapp.k8s-maia.com">MAIA login web app</a>.
 A personal ID token is required to authenticate to the cluster. This token is uniquely assigned to each user and stored in the <code>config</code> file.</p>
-<p>IMPORTANT: Each ID token is valid for only 48 hours, so you will need to re-authenticate every 2 days, either through the <a href="#Authentication via web browser app">web app</a> or with the <a href="#Authentication with command line">command line</a></p>
+<p>IMPORTANT: Each ID token is valid for only 720 hours, so you will need to re-authenticate every 30 days, either through the <a href="#Authentication via web browser app">web app</a> or with the <a href="#Authentication with command line">command line</a></p>
 <h3 id="authentication-via-web-browser-app">Authentication via web browser app</h3>
 <p>After installing <strong>kubectl</strong>, authenticate through the <a href="https://loginapp.k8s-maia.com">MAIA Login</a> webpage.
 Copy/paste and execute the displayed commands on your shell or either download the full config file and save it as <code>~/.kube/config</code>.</p>
@@ -533,6 +533,18 @@ Copy/paste and execute the displayed commands on your shell or either download t
 <p>You can get the latest binary release for your OS on the GitHub page, and save it as <code>~/.kube/kubectl-oidc_login</code>.
 After saving it, run <code>kubectl oidc-login</code>. You will be prompted to a webpage where to login with your credentials.
 After a successful login, the new ID token will be automatically saved in the <em>config</em> file.</p>
+<p>IMPORTANT: To successfully refresh your id-token by using <em>KubeLogin</em>, you will need to add <code>extra-scopes: groups,profile,email</code> under <code>user.auth-provider.config</code>, so that your kube config file will look like:</p>
+<pre><code class="language-yaml">users:
+- name: YOUR_EMAIL@YOUR_DOMAIN
+  user:
+    auth-provider:
+      config:
+        client-id: dex-kth
+        client-secret: CLIENT_SECRET
+        extra-scopes: groups,profile,email
+        idp-issuer-url: https://dex.k8s-maia.com
+      name: oidc
+</code></pre>
 <h2 id="first-time-authentication">First time Authentication</h2>
 <p>When you authenticate to the cluster for the first time after the registration, you will need to set your personal namespace as the default.
 This is because, by default, Kubernetes assignes the namespace <code>default</code> as the current one.
@@ -545,7 +557,7 @@ To set your personal namespace as the current one:</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 30, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 10, 2022</span>
       
         <br>
         Created:
@@ -632,10 +644,10 @@ To set your personal namespace as the current one:</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.instant", "navigation.tracking", "navigation.expand", "navigation.sections", "navigation.tabs", "toc.integrate", "toc.follow"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.instant", "navigation.tracking", "navigation.expand", "navigation.sections", "navigation.tabs", "toc.integrate", "toc.follow"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.8492ddcf.min.js"></script>
+      <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
       
     
   </body>
