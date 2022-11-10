@@ -1,7 +1,7 @@
 site_name: MAIA
 edit_uri: edit/main/docs/
 nav:
-    - Home: 'main.md'
+    - Home: 'index.md'
     - Docs:
       - MAIA Docs: 'docs.md'
       - User Registration: 'user_registration.md'
@@ -49,9 +49,9 @@ repo_name: MAIA-KTH/Hive_Gate
 extra:
   homepage: https://loginapp.k8s-maia.com
 plugins:
-  - git-committers:
-      repository: MAIA-KTH/Hive_Gate
-      branch: main
+  #- git-committers:
+  #    repository: MAIA-KTH/Hive_Gate
+  #    branch: main
   - git-authors:
       enabled: true
   - git-revision-date-localized:
