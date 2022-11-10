@@ -7,7 +7,7 @@ In order to properly authenticate to the cluster, you need to have a proper conf
 This configuration file can be obtained by authentication via the [MAIA login web app](https://loginapp.k8s-maia.com).
 A personal ID token is required to authenticate to the cluster. This token is uniquely assigned to each user and stored in the `config` file.
 
-IMPORTANT: Each ID token is valid for only 48 hours, so you will need to re-authenticate every 2 days, either through the [web app](#Authentication via web browser app) or with the [command line](#Authentication with command line)
+IMPORTANT: Each ID token is valid for only 720 hours, so you will need to re-authenticate every 30 days, either through the [web app](#Authentication via web browser app) or with the [command line](#Authentication with command line)
 
 ### Authentication via web browser app
 After installing **kubectl**, authenticate through the [MAIA Login](https://loginapp.k8s-maia.com) webpage.
@@ -21,6 +21,20 @@ In order to properly authenticate using the command line, [KubeLogin](https://gi
 You can get the latest binary release for your OS on the GitHub page, and save it as `~/.kube/kubectl-oidc_login`.
 After saving it, run ``kubectl oidc-login``. You will be prompted to a webpage where to login with your credentials.
 After a successful login, the new ID token will be automatically saved in the *config* file.
+
+IMPORTANT: To successfully refresh your id-token by using *KubeLogin*, you will need to add ``extra-scopes: groups,profile,email`` under `user.auth-provider.config`, so that your kube config file will look like:
+```yaml
+users:
+- name: YOUR_EMAIL@YOUR_DOMAIN
+  user:
+    auth-provider:
+      config:
+        client-id: dex-kth
+        client-secret: CLIENT_SECRET
+        extra-scopes: groups,profile,email
+        idp-issuer-url: https://dex.k8s-maia.com
+      name: oidc
+```
 
 ## First time Authentication
 
