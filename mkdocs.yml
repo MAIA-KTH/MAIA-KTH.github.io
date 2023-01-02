@@ -44,7 +44,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-repo_url: https://github.com/MAIA-KTH/Hive_Gate
+repo_url: https://gits-15.sys.kth.se/MAIA/Hive_Gate
 repo_name: MAIA-KTH/Hive_Gate
 extra:
   homepage: https://loginapp.k8s-maia.com
