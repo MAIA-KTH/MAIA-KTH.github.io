@@ -47,7 +47,7 @@ theme:
 repo_url: https://gits-15.sys.kth.se/MAIA/Hive_Gate
 repo_name: MAIA/Hive_Gate
 extra:
-  homepage: https://loginapp.k8s-maia.com
+  homepage: https://k8s-maia.com
 plugins:
   #- git-committers:
   #    repository: MAIA-KTH/Hive_Gate
