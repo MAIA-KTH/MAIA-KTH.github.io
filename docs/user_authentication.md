@@ -4,13 +4,13 @@ After [registering a MAIA account](user_registration.md), follow the instruction
 
 ## User Login
 In order to properly authenticate to the cluster, you need to have a proper configuration YAML file saved in `~/.kube/config`.
-This configuration file can be obtained by authentication via the [MAIA login web app](https://loginapp.k8s-maia.com).
+This configuration file can be obtained by authentication via the [MAIA login web app](https://login.maia.cloud.cbh.kth.se).
 A personal ID token is required to authenticate to the cluster. This token is uniquely assigned to each user and stored in the `config` file.
 
 IMPORTANT: Each ID token is valid for only 720 hours, so you will need to re-authenticate every 30 days, either through the [web app](#Authentication via web browser app) or with the [command line](#Authentication with command line)
 
 ### Authentication via web browser app
-After installing **kubectl**, authenticate through the [MAIA Login](https://loginapp.k8s-maia.com) webpage.
+After installing **kubectl**, authenticate through the [MAIA Login](https://login.maia.cloud.cbh.kth.se) webpage.
 Copy/paste and execute the displayed commands on your shell or either download the full config file and save it as `~/.kube/config`.
 
 NOTE: In Windows systems, `Git Bash` is the recommended shell to execute *Kube* commands.
