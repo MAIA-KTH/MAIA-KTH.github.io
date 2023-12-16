@@ -1,6 +1,6 @@
 # MAIA
 ## Medical Artificial Intelligence Aggregator
-![](images/MAIA_schema.png)
+![](images/MAIA_Life-cycle.png)
 
 ---
 ## AI Platform for Joint Collaborations in the Medical Field
