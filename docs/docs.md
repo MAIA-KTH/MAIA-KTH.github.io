@@ -24,15 +24,16 @@ As a Cluster Admin, you can create namespaces for different GitHub Teams, popula
 MAIA's ultimate goal is to provide a common framework to promote and facilitate the development of AI tools in the clinical context, with a particular focus on the final deployment of such tools in a real use-case scenario.
 To achieve this goal, MAIA provides a set of tools to support the entire Medical AI life-cycle development pipeline, from data preparation to model deployment.
 The MAIA Workflows are a set of applications that can be used to perform the following tasks:
-- **Data Preparation**: a set of tools to prepare the data for the AI model training, including Data Storage, Data Sharing, and Image Visualization.
+
+- Data Preparation: a set of tools to prepare the data for the AI model training, including Data Storage, Data Sharing, and Image Visualization.
   - Orthanc
   - File Browser
   - OHIF Viewer
   - 3D Slicer
-- **Data Annotation**: a set of tools to annotate the data for the Supervised AI model training.
+- Data Annotation: a set of tools to annotate the data for the Supervised AI model training.
   - 3D Slicer [ + MONAI Label ]
   - Label Studio
-- **Model Training**: a set of tools to train and monitor the AI model on the annotated data.
+- Model Training: a set of tools to train and monitor the AI model on the annotated data.
     - Jupyter Hub with the following frameworks available:
       - PyTorch
       - TensorFlow
@@ -41,15 +42,15 @@ The MAIA Workflows are a set of applications that can be used to perform the fol
       - nn-Detection
     - Matlab
     - MLFlow
-- **Model Evaluation**: a set of tools to evaluate the trained AI model, including model performance metrics, model robustness, and model generalization capabilities.
+- Model Evaluation: a set of tools to evaluate the trained AI model, including model performance metrics, model robustness, and model generalization capabilities.
   - MySQL
   - Honeycomb
   - Metrics Reloaded
-- **Model Deployment**: a set of tools to deploy the trained AI model, including model conversion, model optimization, and model deployment.
+- Model Deployment: a set of tools to deploy the trained AI model, including model conversion, model optimization, and model deployment.
   - MLFlow
   - Panel
   - Monai Bundle and Monai Deploy
-- **Model Refinement**: a set of tools to refine the trained AI model, including model re-training, model fine-tuning, and model transfer learning.
+- Model Refinement: a set of tools to refine the trained AI model, including model re-training, model fine-tuning, and model transfer learning.
   -  MONAI Label
 
 ## MAIA Dashboard [COMING SOON]
