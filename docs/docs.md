@@ -26,33 +26,12 @@ To achieve this goal, MAIA provides a set of tools to support the entire Medical
 The MAIA Workflows are a set of applications that can be used to perform the following tasks:
 
 - **Data Preparation**: a set of tools to prepare the data for the AI model training, including Data Storage, Data Sharing, and Image Visualization.
-  - Orthanc
-  - File Browser
-  - OHIF Viewer
-  - 3D Slicer
+- **Data Annotation**: a set of tools to annotate the data for the Supervised AI model training.
+- **Model Training**: a set of tools to train and monitor the AI model on the annotated data.
+- **Model Evaluation**: a set of tools to evaluate the trained AI model, including model performance metrics, model robustness, and model generalization capabilities.
+- **Model Deployment**: a set of tools to deploy the trained AI model, including model conversion, model optimization, and model deployment.
+- **Model Refinement**: a set of tools to refine the trained AI model, including model re-training, model fine-tuning, and model transfer learning.
 
-- Data Annotation: a set of tools to annotate the data for the Supervised AI model training.
-  - 3D Slicer [ + MONAI Label ]
-  - Label Studio
-- Model Training: a set of tools to train and monitor the AI model on the annotated data.
-    - Jupyter Hub with the following frameworks available:
-      - PyTorch
-      - TensorFlow
-      - MONAI
-      - nnU-Net
-      - nn-Detection
-    - Matlab
-    - MLFlow
-- Model Evaluation: a set of tools to evaluate the trained AI model, including model performance metrics, model robustness, and model generalization capabilities.
-  - MySQL
-  - Honeycomb
-  - Metrics Reloaded
-- Model Deployment: a set of tools to deploy the trained AI model, including model conversion, model optimization, and model deployment.
-  - MLFlow
-  - Panel
-  - Monai Bundle and Monai Deploy
-- Model Refinement: a set of tools to refine the trained AI model, including model re-training, model fine-tuning, and model transfer learning.
-  -  MONAI Label
 
 ## MAIA Dashboard [COMING SOON]
 ![img.png](images/Dashboard.png)
