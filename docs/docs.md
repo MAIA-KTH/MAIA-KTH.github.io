@@ -25,11 +25,12 @@ MAIA's ultimate goal is to provide a common framework to promote and facilitate 
 To achieve this goal, MAIA provides a set of tools to support the entire Medical AI life-cycle development pipeline, from data preparation to model deployment.
 The MAIA Workflows are a set of applications that can be used to perform the following tasks:
 
-- Data Preparation: a set of tools to prepare the data for the AI model training, including Data Storage, Data Sharing, and Image Visualization.
+- **Data Preparation**: a set of tools to prepare the data for the AI model training, including Data Storage, Data Sharing, and Image Visualization.
   - Orthanc
   - File Browser
   - OHIF Viewer
   - 3D Slicer
+
 - Data Annotation: a set of tools to annotate the data for the Supervised AI model training.
   - 3D Slicer [ + MONAI Label ]
   - Label Studio
